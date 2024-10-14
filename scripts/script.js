@@ -119,3 +119,9 @@ Cart = new Cart();
 window.addEventListener("load", function() {
     this.document.getElementById("addToCartButton").addEventListener("click", addToCart);
 });
+
+var myModal = document.getElementById('exampleModal')
+var myInput = document.getElementById('myInput')
+myModal.addEventListener('shown.bs.modal', function () {
+    myInput.focus()
+  })
