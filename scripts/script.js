@@ -88,6 +88,10 @@ function updateCart(){
             Cart.removeItem(Cart.items[i]);
             updateCart();
         });
+        removeButton.classList.add('btn');
+        removeButton.classList.add('btn-danger');
+        removeButton.classList.add('w-100');
+
 
         let quantity = row.insertCell('td');
         quantity.innerText = Cart.items[i].quantity;
@@ -107,10 +111,6 @@ function updateCart(){
             price.style.backgroundColor = 'lightgrey';
             quantity.style.backgroundColor = 'lightgrey';
         }
-
-        removeButton.classList.add('btn');
-        removeButton.classList.add('btn-danger');
-
     }
 }
 
