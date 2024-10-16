@@ -2,3 +2,10 @@ th.remove-column
 {
     width: 50px;
 }
+
+.myNavBar{
+    height: 50px;
+    align-content: center;
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
